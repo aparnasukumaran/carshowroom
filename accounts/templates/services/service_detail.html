@@ -259,30 +259,32 @@
   <!-- Workflow Steps -->
 {% if service.process_steps %}
 <div class="workflow-section">
-    <h3 style="color:#fff; margin-bottom:15px;">Workflow Steps</h3>
+
+    {% if service.process_steps.heading %}
+        <h3 style="color:#fff; margin-bottom:15px;">
+            {{ service.process_steps.heading }}
+        </h3>
+    {% else %}
+        <h3 style="color:#fff; margin-bottom:15px;">
+            Workflow Steps
+        </h3>
+    {% endif %}
 
     <div class="workflow-steps">
-        {# Check if process_steps is iterable directly (JSON/list) #}
-        {% if service.process_steps.all %}
-            {% for step in service.process_steps.all %}
-                <div class="workflow-step-card">
-                    <h3>{{ forloop.counter }}</h3>
-                    <h4>{{ step.title }}</h4>
-                    <p>{{ step.description }}</p>
-                </div>
-            {% endfor %}
-        {% else %}
-            {% for step in service.process_steps %}
-                <div class="workflow-step-card">
-                    <h3>{{ forloop.counter }}</h3>
-                    <h4>{{ step.title }}</h4>
-                    <p>{{ step.description }}</p>
-                </div>
-            {% endfor %}
-        {% endif %}
+        {% for step in service.process_steps.steps %}
+            <div class="workflow-step-card">
+                <h3>{{ forloop.counter }}</h3>
+                <h4>{{ step.title }}</h4>
+                <p>{{ step.description }}</p>
+            </div>
+        {% empty %}
+            <p style="color:#999;">No workflow steps added.</p>
+        {% endfor %}
     </div>
+
 </div>
 {% endif %}
+
 
 
 </div>
