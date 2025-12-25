@@ -13,7 +13,7 @@ import os
 from pathlib import Path
 
 from dotenv import load_dotenv
-load_dotenv()
+load_dotenv(os.path.join(os.path.dirname(os.path.dirname(__file__)), '.env'))
 
 
 
