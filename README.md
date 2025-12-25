@@ -35,15 +35,7 @@ A comprehensive Django based web application to manage car showroom operations, 
 - **Libraries:** openpyxl, reportlab, xhtml2pdf, Pillow, python-dotenv
 
 ## Screenshots
-
 ### User Side
-- Home Page  
-- Car & Spare Part Listings  
-- Booking Page  
-- Profile Page  
-- Checkout & Payment
-
-- <h2>📸 Screenshots</h2>
 <div style="display:flex; flex-wrap: wrap; gap: 10px;">
     <img src="https://github.com/user-attachments/assets/8d1b6421-b117-4d52-a98d-23d42be0de1e" alt="Home" width="300">
     <img src="https://github.com/user-attachments/assets/5398ffca-a1f5-484c-a412-983d6c538ae9" alt="Cars" width="300">
@@ -52,6 +44,8 @@ A comprehensive Django based web application to manage car showroom operations, 
     <img src="https://github.com/user-attachments/assets/ada8f35a-4dfc-4711-9029-03b43412877f" alt="login"width="300">
     <img src="https://github.com/user-attachments/assets/ddc7045e-2c03-4665-a990-aa10d0d6b48b" alt="razorpay"width="300">
     <img src="https://github.com/user-attachments/assets/56fc6039-a0e9-4d56-b694-72b943306aef" alt="profile"width="300">
+    <img src="https://github.com/user-attachments/assets/446eb7e8-b1ab-4f3a-9bd8-52e5d5c9a80a" alt="booking"width="300">
+    <img src="https://github.com/user-attachments/assets/91d809c4-51da-4cbc-bfdd-b9f6aba9c11a" alt="footer"width="300">
 </div>
 <p align="center"><i>Home • Cars • Services • Spare Parts</i></p>
 
@@ -69,6 +63,7 @@ A comprehensive Django based web application to manage car showroom operations, 
 ##Author
 Aparna Krishna u s
 git clone https://github.com/aparnasukumaran/carshowroom.git
+
 
 
 
