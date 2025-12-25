@@ -150,34 +150,28 @@
             <h6>Workflow Steps :</h6>
 
             {% if service.process_steps %}
-            <div class="steps-container">
-                {# Check if it's a related model with .all() #}
-                {% if service.process_steps.all %}
-                {% for step in service.process_steps.all %}
-                <div class="step-item">
-                    <div class="step-icon">{{ forloop.counter }}</div>
-                    <div class="step-details">
-                        <h6>{{ step.title }}</h6>
-                        <p>{{ step.description }}</p>
-                    </div>
-                </div>
-                {% endfor %}
-                {% if service.process_steps %}
-                {% for step in service.process_steps.steps %}
-                <div class="step-item">
-                    <div class="step-icon">{{ forloop.counter }}</div>
-                    <div class="step-details">
-                        <h6>{{ step.title }}</h6>
-                        <p>{{ step.description }}</p>
-                    </div>
-                </div>
-                {% endfor %}
-                {% endif %}
+<div class="divider"></div>
+<div class="service-steps">
+    {% if service.process_steps.heading %}
+    <h6>{{ service.process_steps.heading }}</h6>
+    {% else %}
+    <h6>Workflow Steps:</h6>
+    {% endif %}
 
+    <div class="steps-container">
+        {% for step in service.process_steps.steps %}
+        <div class="step-item">
+            <div class="step-icon">{{ forloop.counter }}</div>
+            <div class="step-details">
+                <h6>{{ step.title }}</h6>
+                <p>{{ step.description }}</p>
             </div>
-            {% else %}
-            <p>No workflow steps added.</p>
-            {% endif %}
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endif %}
+
         </div>
         {% endif %}
         </p>
