@@ -1,4 +1,4 @@
-# Car Showroom Management - Django Web Application
+## Car Showroom Management - Django Web Application
 
 A comprehensive Django based web application to manage car showroom operations, including cars, spare parts,services, bookings, orders, payments, and admin management.
 
@@ -76,5 +76,6 @@ This project was built to gain hands-on experience in Django full-stack developm
 
 ## Author
 - Aparna Krishna u s
+
 
 
