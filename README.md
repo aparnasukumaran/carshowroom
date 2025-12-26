@@ -1,8 +1,12 @@
 # Car Showroom Management - Django Web Application
 
-A comprehensive Django based web application to manage car showroom operations, including cars, spare parts, bookings, orders, payments, and admin management.
+A comprehensive Django based web application to manage car showroom operations, including cars, spare parts,services, bookings, orders, payments, and admin management.
 
-## Live Demo - https://prestigelane.pythonanywhere.com/
+## Live Demo 
+https://prestigelane.pythonanywhere.com/
+
+## GitHub Repository
+https://github.com/aparnakrishnaus/carshowroom
 
 ## Features
 ### User Side
@@ -64,7 +68,11 @@ A comprehensive Django based web application to manage car showroom operations, 
 
 <p align="center">Home • Payments • Orders • Reports • Cars • Services • Spare Parts • Subscribers • Razorpay • Customers </p>
 
+## Project Type
+Full-Stack Web Application (Django)
+
+## Purpose of the Project
+This project was built to gain hands-on experience in Django full-stack development, payment gateway integration, admin workflows, and real world showroom management features.
 
 ##Author
-- Aparna Krishna u s
-- git clone https://github.com/aparnasukumaran/carshowroom.git
+ Aparna Krishna u s
