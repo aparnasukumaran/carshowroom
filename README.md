@@ -74,6 +74,7 @@ Full-Stack Web Application (Django)
 ## Purpose of the Project
 This project was built to gain hands-on experience in Django full-stack development, payment gateway integration, admin workflows, and real world showroom management features.
 
-##Author
+## Author
 - Aparna Krishna u s
+
 
